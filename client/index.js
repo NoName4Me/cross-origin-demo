@@ -16,9 +16,7 @@ const server = http.createServer((req, res) => {
         <p id="msg"></p>
         <p id="error" style="color:red;"></p>
         <script>
-        fetch('http://${hostname}:${serverPort}',{
-            headers: {'Origin':'http://${hostname}:${port}'}
-        }).then((resp)=>{
+        fetch('http://${hostname}:${serverPort}').then((resp)=>{
             return resp.text();
         }).then((resp)=>{
             document.querySelector('#msg').innerText = resp;
