@@ -1,0 +1,13 @@
+{
+  "name": "cross-origin-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "node client/index.js",
+    "server": "node server/index.js",
+    "start": "concurrently \"npm run client\" \"npm run server\""
+  },
+  "author": "",
+  "license": "Public"
+}
