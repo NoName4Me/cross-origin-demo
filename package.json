@@ -9,5 +9,8 @@
     "start": "concurrently \"npm run client\" \"npm run server\""
   },
   "author": "",
-  "license": "Public"
+  "license": "Public",
+  "dependencies": {
+    "concurrently": "^3.5.1"
+  }
 }

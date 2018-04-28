@@ -1,7 +1,7 @@
 const http = require('http');
 const url = require('url');
 
-const hostname = '192.168.1.9';
+const hostname = '172.18.19.75';
 const port = 3010;
 const serverPort = 3020;
 
@@ -77,5 +77,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
+    console.log(`Client running at http://${hostname}:${port}/`);
 });
